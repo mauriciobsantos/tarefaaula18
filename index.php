@@ -198,7 +198,48 @@ array e [index] representa o índice.
 
         ?>
         </div>
-        </li>  
+        </li> 
+
+        <li>
+        <p>
+        Percorrer os valores do array com um foreach que imprima (por exemplo):
+animal: cachorro
+idade: 5
+altura: 0,60
+nome: Sonic</p>
+<div>
+<?php 
+$mascote =[
+    'animal' =>'Cachorro',
+    'idade' => 4,
+    'altura' =>40,
+    'nome' => 'Rex'
+
+];
+echo('<pre>');
+print_r($mascote);
+echo('</pre>');
+?>
+</div>
+</li> 
+<li>
+<p>
+Percorrer os valores do array com um foreach que imprima (por exemplo):
+animal: cachorro
+idade: 5
+altura: 0,60
+nome: Sonic
+</p>
+<div>
+<?php 
+
+foreach($mascote as $indice => $valor){
+    echo "$indice: $valor <br>";
+}
+?>
+
+</div>
+</li>
     </ol>
 </body>
 </html>
