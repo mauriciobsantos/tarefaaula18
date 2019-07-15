@@ -25,11 +25,31 @@
 em um número gerado aleatoriamente entre 0 e 100.</p>
                     <div>
                         <?php 
-                            for($i=1 ; $i<=mt_rand(0,100); $i++){
+                            for($i=1; $i<= mt_rand(0, 100); $i++){
                                 echo($i.',');
+                            }
                         ?>
                     </div>
-        </li>            
+        </li>    
+
+        <li>
+        <p>3. Mostrar a tabela de multiplicação do 2 utilizando um for</p>
+
+        <div>
+            <table>
+                <?php  
+                    for($i=1 ; $i<=10 ; $i++){
+                        echo('<tr>');
+                        echo(' <td>');
+                        echo(2 .' x ' . $i .' = '. (2*$i) );
+                        echo('</td>');
+                        echo('</tr>');
+
+                    }
+                ?>
+            </table>
+        </div>
+        </li>        
     </ol>
 </body>
 </html>
