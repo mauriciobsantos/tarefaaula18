@@ -94,7 +94,111 @@ moeda forem necessários.</p>
                         echo("deu cara depois de $n_arremessos vezes");
                     ?>
             </div>
-        </li>     
+        </li>  
+
+        <li>
+            <p>Definir um array com 5 strings que sejam nomes. Percorrer esse array para
+imprimir todos os nomes na tela.
+a. Resolver este problema com um for.
+b. Resolver este problema com while.
+c. Resolver este problema com um do/while.
+        </p>
+
+        <div>
+            <?php
+            $nomes = [
+                'Sergio',
+                'Thomaz',
+                'Fernando',
+                'Ana Livia',
+                'Marcuso'
+            ];
+            for($i = 0 ; $i< count($nomes) ; $i++){
+                echo($nomes[$i]. '<br');
+
+            }
+
+            echo('--<br>');
+            $i = 0;
+            while($i < count($nomes)){
+                echo($nomes[$i]. '<br');
+                $i++;
+            }
+
+                echo('-- IMprimindo ao contrario <br>');
+                $i= count ($nomes) - 1;
+            do {
+                echo($nomes[$i]. '<br>');
+                $i--;
+                
+            }while($i >= 0);
+            echo($i);
+            ?>
+        </div>
+        </li>
+
+        <li>
+        
+        7. Definir um array com 10 números aleatórios entre 0 e 10. Percorrer esse array
+para imprimir todos os números. A execução deve terminar se algum dos
+números encontrados for 5 (a mensagem impressa deve ser “Encontramos um
+5!”).
+a. Resolver este problema com um for.
+b. Resolver este problema com um while.
+c. Resolver este problema com um do/while.
+
+        <div>
+        <?php 
+        $numeros = [
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9'
+    ];            
+        for($i = 0 ; $i< count($numeros) ; $i++){
+
+        }
+        echo ('--<br>');
+
+        $i=0; 
+        while($i < count($numeros) - 1){
+            $i++;
+        }
+        echo($numeros[$i]. '<br>');
+        ?>
+        
+        </div>
+        </li> 
+
+        <li>
+        <p>Utilizando a função “Range”(http://php.net/manual/en/function.range.php),
+criar um intervalo de letras (de a até o), imprimir um valor que diga “Na posição
+[index], está o valor [value]”, em que [value] será substituído por cada valor do
+array e [index] representa o índice.
+</p>
+
+        <pre>
+        <?php 
+        $letras = range('a','o');
+        print_r($letras);
+        ?>
+        </pre>
+        <div>
+        <?php  
+        foreach($letras as $posicao =>$letras){
+            echo "Na posição $posicao, está o valor $letras<br> " ;
+
+        }
+
+        ?>
+        </div>
+        </li>  
     </ol>
 </body>
 </html>
